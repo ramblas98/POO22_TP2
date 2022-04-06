@@ -15,7 +15,7 @@ public class TP2_EJEMPLO1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        System.out.println("Hola desde la rama profe");
     }
     
 }
