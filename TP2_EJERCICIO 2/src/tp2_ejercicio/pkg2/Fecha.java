@@ -7,7 +7,7 @@ package tp2_ejercicio.pkg2;
 
 /**
  *
- * @author alumno
+ * @author  Danie
  */
 public class Fecha {
     private int dias;

@@ -7,7 +7,7 @@ package tp2_ejercicio.pkg2;
 
 /**
  *
- * @author alumno
+ * @author Daniel
  */
 public class TP2_EJERCICIO2 {
 
