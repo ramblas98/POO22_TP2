@@ -7,7 +7,7 @@ package ejercicio.pkg3;
 
 /**
  *
- * @author Daniel Martinez
+ * @author Daniel
  */
 public class EJERCICIO3 {
 
