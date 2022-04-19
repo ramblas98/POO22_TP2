@@ -7,7 +7,7 @@ package tp2_ejercicio.pkg2;
 
 /**
  *
- * @author  Danie
+ * @author  Daniel
  */
 public class Fecha {
     private int dias;
@@ -56,7 +56,7 @@ public class Fecha {
         this.anio = a;
     }
     public void Normalizar(){
-        while(Validar() == true){
+        while(Validar() == false){
             //Mal Dias 
             if (this.dias > Dias(this.mes)){
                 this.dias = this.dias - Dias(this.mes);
@@ -73,7 +73,10 @@ public class Fecha {
     }
     public void Adelantar(int dia){
         this.dias = this.dias + dia;
-        if(Validar() == false) Normalizar();
+        if(Validar() == false){
+            Normalizar();
+            System.out.println("Adelanar........... ");
+        }
     }
     public void Imprimir(){
         System.out.println(this.dias + "/" + this.mes + "/" + this.anio);
@@ -92,6 +95,7 @@ public class Fecha {
         return 0;
     }
     public boolean Validar(){
+        System.out.println("validar BISIESTO ..........."+Bisiesto(this.anio));
         if(Bisiesto(this.anio) == true) return (this.mes == 2 && this.dias < 0 || this.dias > 29);
         else return (this.dias <= Dias(this.mes) && this.mes >= 1 || this.mes <= 12 );
     }
