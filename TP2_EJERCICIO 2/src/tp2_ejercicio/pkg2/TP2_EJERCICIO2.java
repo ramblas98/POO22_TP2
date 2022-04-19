@@ -18,7 +18,6 @@ public class TP2_EJERCICIO2 {
         // TODO code application logic here
         Fecha f = new Fecha(31,1,2020);
         f.Adelantar(29);
-        System.out.println("Validar 1..........."+f.Validar());
         f.Imprimir();
     }
     
