@@ -60,7 +60,7 @@ public class Fecha {
             //Mal Dias 
             if (this.dias > Dias(this.mes)){
                 this.dias = this.dias - Dias(this.mes);
-                if((this.mes + 1) >= 1 || (this.mes + 1) <= 12){
+                if((this.mes + 1) >= 12 || (this.mes + 1) <= 12){
                     this.mes += 1;
                 }
                 else{
@@ -75,13 +75,12 @@ public class Fecha {
         this.dias = this.dias + dia;
         if(Validar() == false){
             Normalizar();
-            System.out.println("Adelanar........... ");
         }
     }
     public void Imprimir(){
         System.out.println(this.dias + "/" + this.mes + "/" + this.anio);
     }
-    public boolean Bisiesto(int anio){
+    public static boolean Bisiesto(int anio){
         return(anio/400 == 0 || anio/4 == 0  && anio/100 != 0);
     }
     public int Dias(int m){
@@ -95,8 +94,7 @@ public class Fecha {
         return 0;
     }
     public boolean Validar(){
-        System.out.println("validar BISIESTO ..........."+Bisiesto(this.anio));
-        if(Bisiesto(this.anio) == true) return (this.mes == 2 && this.dias < 0 || this.dias > 29);
-        else return (this.dias <= Dias(this.mes) && this.mes >= 1 || this.mes <= 12 );
+        if(Fecha.Bisiesto(anio) == true) return (this.mes == 2 && this.dias < 0 || this.dias > 29);
+        else return (this.dias <= Dias(this.mes) && (this.mes >= 1 || this.mes <= 12 ));
     }
 }
