@@ -59,8 +59,11 @@ Scanner teclado = new Scanner(System.in);
     
 
 public void agregarEstudiante(String apellido,String nombre,int lu, String email){
-
-
+ Estudiante e = new Estudiante();
+ e.setApellidos(apellido);
+ e.setNombres(nombre);
+ e.setLu(lu);
+ e.setEmail(email);
 }
 public void mostrarLista(){
 
