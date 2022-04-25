@@ -55,12 +55,16 @@ public class Fecha {
     this.mes=m;
     this.anio=a;
         
-    public void adelantar(int d){
+   public void adelantar (int d){
      this.setDia(this.dia+d);
     
     }
-    public boolean valida(){}
-    
+    public boolean valida(){
+
+    if(this.dia>1 && this.dia<30 && this.mes >1 && this.mes<13)
+        return true;
+        else
+    return false;
     }
 public void normalizar(){
 
@@ -73,6 +77,14 @@ public void implimir(){
 
 }
 public boolean bisiesto(int a){
+     if(a %400==0)
+         if(a%4==0)
+             if(a%100 !=0)
+              return true;
+     else
+        return false;
+        return false;
+                 }
+       
 
-}
 }
