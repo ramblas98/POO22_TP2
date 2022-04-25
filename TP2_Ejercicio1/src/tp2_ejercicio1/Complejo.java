@@ -48,17 +48,11 @@ public class Complejo {
         this.re = (this.re * a.re)-(this.im * a.im);
         this.im = (this.re * a.im)+(this.im * a.re);
     }
-    public void div(Complejo a){
-        this.re = (((this.re * a.re) + (this.im * a.im)) / ((a.re*a.re)+(a.im*a.im)));
-        this.im = (((this.im * a.re) - (this.re * a.im)) / ((a.re*a.re)+(a.im*a.im)));
-    }
-    public double modulo(){
-        return(Math.sqrt(Math.pow(im,2) + Math.pow(re,2)));
-    }
+    
      public Complejo conjugado(){
         Complejo c = new Complejo();
         c.re = this.re;
-        c.im = (-1)*this.im;
+        c.im = this.im*(-1);
         
         return c;
     }
