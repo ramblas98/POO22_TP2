@@ -25,7 +25,7 @@ Scanner teclado = new Scanner(System.in);
 
     public int getTotalClases() {
         return totalClases;
-    }
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
     public Estudiante[] getListaEstudiantes() {
         return listaEstudiantes;
@@ -68,6 +68,8 @@ public void agregarEstudiante(String apellido,String nombre,int lu, String email
 public void mostrarLista(){
 
 }
+
+
 
 private void ordenarLista(){
 }
