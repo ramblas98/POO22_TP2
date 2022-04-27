@@ -53,8 +53,15 @@ Scanner teclado = new Scanner(System.in);
     
     }
    public void agregarEstudiante(){
-   
-   
+   Estudiante e = null;
+   System.out.println("Ingresar el apellido");
+   e.setApellidos(teclado.nextLine());
+   System.out.println("Ingrese nombre");
+   e.setNombres(teclado.nextLine());
+   System.out.println("Ingrese correo elactronico");
+   e.setEmail(teclado.nextLine());
+   System.out.println("Ingrese su LU ");
+   e.setLu(teclado.nextInt());
    }
     
 
