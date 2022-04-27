@@ -78,7 +78,12 @@ public void agregarEstudiante(String apellido,String nombre,int lu, String email
  e.setEmail(email);
 }
 public void mostrarLista(){
-
+int n=this.totalEstudiante;
+    for(int i=0;i<n;i++){
+      System.out.println("nombre "+  listaEstudiantes[i].toString());
+       /* System.out.println("apellido  "+ listaEstudiantes[i].getApellidos());
+       System.out.println("nombre "+  listaEstudiantes[i].getEmail());
+         System.out.println("nombre "+  listaEstudiantes[i].getLu());*/
 }
 
 
