@@ -12,15 +12,18 @@ import java.util.Scanner;
 public class Comision {
     private int totalClases;
     private Estudiante[] listaEstudiantes;
-    private int totalEstudiante;
+    private int totalEstudiante=0;
 Scanner teclado = new Scanner(System.in);
+    
     public Comision() {
+        listaEstudiantes=  new Estudiante[100];
     }
 
     public Comision(int totalClases, Estudiante[] listaEstudiantes, int totalEstudiante) {
         this.totalClases = totalClases;
         this.listaEstudiantes = listaEstudiantes;
         this.totalEstudiante = totalEstudiante;
+         listaEstudiantes=  new Estudiante[100];
     }
 
     public int getTotalClases() {
@@ -53,7 +56,7 @@ Scanner teclado = new Scanner(System.in);
     
     }
    public void agregarEstudiante(){
-   Estudiante e = null;
+   Estudiante e = new Estudiante();
    System.out.println("Ingresar el apellido");
    e.setApellidos(teclado.nextLine());
    System.out.println("Ingrese nombre");
@@ -62,6 +65,8 @@ Scanner teclado = new Scanner(System.in);
    e.setEmail(teclado.nextLine());
    System.out.println("Ingrese su LU ");
    e.setLu(teclado.nextInt());
+   listaEstudiantes[this.totalEstudiante]=e;
+   this.totalEstudiante+=1;
    }
     
 
