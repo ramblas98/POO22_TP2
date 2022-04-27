@@ -91,7 +91,12 @@ int n=this.totalEstudiante;
 private void ordenarLista(){
 }
 public Estudiante buscarEstudiante(int lu){
-
+int n=this.totalEstudiante;
+    for(int i=0;i<n;i++){  
+     if(listaEstudiantes[i].getLu()==lu) return listaEstudiantes[i];   
+        
+        
+    }
 }
 public void mostrarRegulares(){}
 
