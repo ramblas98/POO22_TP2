@@ -98,7 +98,15 @@ int n=this.totalEstudiante;
         
     }
 }
-public void mostrarRegulares(){}
+public void mostrarRegulares(){
+    int n=this.totalEstudiante;
+    for(int i=0;i<n;i++){
+     if(listaEstudiantes[i].getNotap1()>60) && (listaEstudiantes[i]>60));
+           System.out.println("Estudiante regular"+ listaEstudiantes[i].toString());
+    
+    }
+
+}
 
 public void regularizarEstudiantes(){
 
