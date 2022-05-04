@@ -12,7 +12,7 @@ package tp2.eje6;
 public class Medico {
     private String nombre;
     private int matricula;
-    private enum especialidad {f,c,o};
+    private enum especialidad {familia,traumatologia,pediatria,internista,otorrino};
     private int cupo;
     private Historia [] historias;
     private int canth;
@@ -60,8 +60,13 @@ public boolean disponibilidad(){
 }
 
 public boolean asignar_historia(String His){
-
-
+if((His.equals.especialidadRequerida)==true)
+      if(estado.libre == true) 
+       sethistorias[];
+       return (true)
+   
+else
+ return false;
 }
 public void (String His){
 
